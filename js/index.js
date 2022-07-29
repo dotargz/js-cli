@@ -5,6 +5,7 @@ class Terminal {
     api = {
         textColor: (hex) => {
             TERMINAL.div.style.color = hex;
+            TERMINAL.input.style.color = hex;
             TERMINAL.form.style.color = hex;
         },
         backgroundColor: (hex) => {
