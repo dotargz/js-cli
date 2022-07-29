@@ -1,0 +1,52 @@
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: #446CCF;
+    overflow: auto;
+}
+
+#terminal {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#terminal-input {
+    width: 85%;
+    height: max-content;
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: monospace;
+    font-size: 11px;
+    overflow: auto;
+    display: flex;
+    border: #0c0c0c 1px solid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#terminal-input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
