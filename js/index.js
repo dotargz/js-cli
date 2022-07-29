@@ -75,7 +75,7 @@ class Terminal {
         if (localStorage.getItem("terminal_display") != null) {
             return JSON.parse(localStorage.getItem("terminal_display"));
         } else {
-            return [];
+            return [`SuperTerm WEB [Version ${Terminal.version}`,`(c) 2022 OneSpark LLC. All rights reserved.`, ``];
         }
     }
     removeLastLine() {
@@ -93,9 +93,9 @@ class Terminal {
         this.current_display.splice(index, 1);
     }
     setup(div, form) {
+        this.version = "1.0.0";
         this.current_display = this.get_from_local_storage();
         this.div = div;
-        this.version = "1.0.0";
         this.form = form;
         this.input = form["terminal-input"];
         form.addEventListener('submit', this.process_input, false);
