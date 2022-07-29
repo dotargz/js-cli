@@ -76,7 +76,7 @@ class Terminal {
         if (localStorage.getItem("terminal_display") != null) {
             return JSON.parse(localStorage.getItem("terminal_display"));
         } else {
-            return [`SuperTerm WEB [Version ${Terminal.version}`,`(c) 2022 OneSpark LLC. All rights reserved.`, ``];
+            return [`SuperTerm WEB [Version ${Terminal.version}]`,`(c) 2022 OneSpark LLC. All rights reserved.`, ``];
         }
     }
     removeLastLine() {
@@ -104,7 +104,7 @@ class Terminal {
 
     }
     reload() {
-        this.current_display = [`SuperTerm WEB [Version ${TERMINAL.version}`,`(c) 2022 OneSpark LLC. All rights reserved.`, ``];
+        this.current_display = [`SuperTerm WEB [Version ${TERMINAL.version}]`,`(c) 2022 OneSpark LLC. All rights reserved.`, ``];
         this.update_div();
     }
     update_div() {
